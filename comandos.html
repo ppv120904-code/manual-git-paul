@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Comandos Linux</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 20px auto; 
+            max-width: 800px; 
+            color: #333;
+        }
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+        }
+        h2 { 
+            color: #2980b9; 
+            border-bottom: 2px solid #ecf0f1; 
+            padding-bottom: 5px; 
+        }
+        .comando-caja { 
+            background: #f9f9f9; 
+            padding: 15px 20px; 
+            margin-bottom: 20px; 
+            border-left: 5px solid #2980b9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        code { 
+            background: #e8e8e8; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-family: monospace;
+            font-size: 1.1em;
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Manual de Comandos Linux</h1>
+    <p>A continuación se detalla la función de algunos comandos básicos de gestión de permisos, texto y discos en sistemas Linux.</p>
+
+    <div class="comando-caja">
+        <h2>CHMOD (Change Mode)</h2>
+        <p><strong>¿Para qué sirve?</strong> Se utiliza para cambiar los permisos de acceso de archivos y directorios. Permite definir de forma precisa quién puede leer, escribir o ejecutar un archivo (el usuario propietario, el grupo u otros usuarios).</p>
+        <p><strong>Ejemplo de uso:</strong> <code>chmod 755 script.sh</code> (Otorga permisos de lectura y ejecución a todos, pero solo el propietario puede modificarlo).</p>
+    </div>
+
+    <div class="comando-caja">
+        <h2>WC (Word Count)</h2>
+        <p><strong>¿Para qué sirve?</strong> Se encarga de contar y mostrar el número de líneas, palabras y bytes (o caracteres) que contiene uno o varios archivos de texto.</p>
+        <p><strong>Ejemplo de uso:</strong> <code>wc -l lista.txt</code> (El modificador -l sirve para contar únicamente las líneas del archivo).</p>
+    </div>
+
+    <div class="comando-caja">
+        <h2>DF (Disk Free)</h2>
+        <p><strong>¿Para qué sirve?</strong> Muestra un informe detallado de la cantidad de espacio libre y usado en los sistemas de archivos (los discos duros, pendrives o particiones montadas) del sistema operativo.</p>
+        <p><strong>Ejemplo de uso:</strong> <code>df -h</code> (La opción -h lo muestra en un formato "legible para humanos", usando Megabytes y Gigabytes en lugar de bloques).</p>
+    </div>
+
+    <div class="comando-caja">
+        <h2>DU (Disk Usage)</h2>
+        <p><strong>¿Para qué sirve?</strong> A diferencia de df que mira el disco entero, <code>du</code> estima y muestra el espacio específico que están ocupando archivos y directorios concretos. Es la mejor herramienta para averiguar qué carpetas están llenando tu disco.</p>
+        <p><strong>Ejemplo de uso:</strong> <code>du -sh /home/usuario/Descargas</code> (Muestra el tamaño total y resumido de esa carpeta en concreto).</p>
+    </div>
+
+</body>
+</html>
